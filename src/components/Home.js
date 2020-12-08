@@ -71,7 +71,7 @@ const HomeStyles = styled.div`
 export default function Home() {
 
   return (
-    <HomeStyles id="home">
+    <HomeStyles>
         <div className='inner'>
             <img className='mainIcon' src={bugIcon} alt='icon' />
             <h1>Industry Experts in Patch & Vunerability Management</h1>

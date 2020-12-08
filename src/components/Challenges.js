@@ -69,7 +69,7 @@ const ChallengesStyles = styled.div`
 export default function Challenges() {
 
   return (
-    <ChallengesStyles id="challenges">
+    <ChallengesStyles>
         <div className='inner'>
             <div className='inner-block'>
                 <h1>Did You Know?</h1>

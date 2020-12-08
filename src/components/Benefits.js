@@ -67,6 +67,7 @@ const BenefitStyles = styled.div`
     @media screen and (max-width: 700px) {
         .inner {
             clip-path: polygon(0 0, 35% 0, 50% 5%, 65% 0, 100% 0, 100% 95%, 65% 95%, 50% 100%, 35% 95%, 0 95%);
+            padding: 60px 0 100px 0;
         }
 
         .inner-block {
@@ -77,11 +78,6 @@ const BenefitStyles = styled.div`
     @media screen and (max-width: 475px) {
         padding: 20px;
 
-        .inner {
-            padding: 60px 0 100px 0;
-        }
-
-
         h1 {
             font-size: 30px;
         }
@@ -91,7 +87,7 @@ const BenefitStyles = styled.div`
 export default function Benefits() {
 
   return (
-    <BenefitStyles id="benefits">
+    <BenefitStyles>
         <div className='inner'>
             <h1 className='heading-block'>Benefits</h1>
             <div className='inner-block'>

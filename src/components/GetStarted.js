@@ -62,7 +62,7 @@ const GetStartedStyles = styled.div`
 export default function GetStarted() {
 
   return (
-    <GetStartedStyles id="getStarted">
+    <GetStartedStyles>
         <div className='inner'>
            <h1>Start Securing Your Business Environment Today!</h1>
            <p><span className='icon' role="img" aria-label="number one">1️⃣</span> We conduct an initial conversation and a Q & A session to understand your requirements.</p>

@@ -1,7 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
+import { Link } from "gatsby";
 
-const StartButtonStyles = styled.a`
+const StartButtonStyles = styled.div`
+
+    a {
     padding: 10px 30px;
     background-color: black;
     border-radius: 2rem;
@@ -9,15 +12,17 @@ const StartButtonStyles = styled.a`
     color: white;
     font-size: 20px;
 
-    &:hover {
-        background-color: darkgrey;
-        color: black;
+        &:hover {
+            background-color: darkgrey;
+            color: black;
+        }
     }
+    
 `;
 
 export default function StartButton() {
 
   return (
-      <StartButtonStyles href="#getStarted">Get Started</StartButtonStyles>
+    <StartButtonStyles><Link to="/#getStarted">Get Started</Link></StartButtonStyles>
   )
 }

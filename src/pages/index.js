@@ -28,10 +28,15 @@ const IndexPage = () => {
       <GlobalStyles />
       <Typography />
       <Nav />
+      <div id="home" />
       <Home />
+      <div id="challenges" />
       <Challenges />
+      <div id="features" />
       <Features />
+      <div id="benefits" />
       <Benefits />
+      <div id="getStarted" />
       <GetStarted />
     </IndexStyles>
   )
