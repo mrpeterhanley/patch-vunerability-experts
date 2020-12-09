@@ -38,6 +38,7 @@ const HomeStyles = styled.div`
     h1 {
         text-align: center;
         font-size: 40px;
+        line-height: 3.5rem;
     }
 
     @media screen and (max-width: 700px) {
@@ -54,6 +55,7 @@ const HomeStyles = styled.div`
 
         h1 {
             font-size: 30px;
+            line-height: 2.5rem;
         }
     }
 
