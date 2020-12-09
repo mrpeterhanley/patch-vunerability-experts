@@ -45,13 +45,14 @@ const GetStartedStyles = styled.div`
     form {
         display: flex;
         flex-direction: column;
-        gap: 10px;
         margin: 20px;
     }
 
     input {
         padding: 5px;
         border-radius: 0.3rem;
+        border: none;
+        margin: 5px 0;
     }
 
     button {
@@ -80,7 +81,7 @@ const GetStartedStyles = styled.div`
 
     @media screen and (max-width: 700px) {
         .inner {
-            padding: 100px 20px;
+            padding: 100px 20px 20px 20px;
             clip-path: polygon(0 0, 35% 0, 50% 10%, 65% 0, 100% 0, 100% 100%, 65% 100%, 50% 100%, 35% 100%, 0 100%);
         }
     }
