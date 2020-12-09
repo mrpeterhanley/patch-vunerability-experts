@@ -48,6 +48,10 @@ const GetStartedStyles = styled.div`
         margin: 20px;
     }
 
+    .form-heading {
+        margin-bottom: 5px;
+    }
+
     input {
         padding: 5px;
         border-radius: 0.3rem;
@@ -61,6 +65,7 @@ const GetStartedStyles = styled.div`
         border: none;
         padding: 10px;
         border-radius: 0.3rem;
+        margin: 5px 0;
     }
 
     button:hover {
@@ -117,7 +122,7 @@ export default function GetStarted() {
            </div>
            
            <form>
-           <h2>Fill in your details for your FREE consultation</h2>
+           <h2 className="form-heading">Fill in your details for your FREE consultation</h2>
                <input type="text" placeholder="Name" />
                <input type="text" placeholder="Company" />
                <input type="tel" placeholder="Telephone" />
