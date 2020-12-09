@@ -89,6 +89,10 @@ const GetStartedStyles = styled.div`
     @media screen and (max-width: 475px) {
         padding: 20px;
 
+        .inner {
+            padding: 100px 0 20px 0;
+        }
+
         h1 {
             font-size: 30px;
         }
