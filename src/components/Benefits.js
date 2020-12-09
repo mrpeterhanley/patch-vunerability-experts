@@ -87,7 +87,7 @@ const BenefitStyles = styled.div`
 export default function Benefits() {
 
   return (
-    <BenefitStyles>
+    <BenefitStyles id="benefits">
         <div className='inner'>
             <h1 className='heading-block'>Benefits</h1>
             <div className='inner-block'>

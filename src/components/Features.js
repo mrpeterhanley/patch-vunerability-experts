@@ -111,7 +111,7 @@ const FeaturesStyles = styled.div`
 export default function Features() {
 
   return (
-    <FeaturesStyles>
+    <FeaturesStyles id="features">
         <div className='inner'>
             <h1 className='heading-block'>Features</h1>
             <div className='inner-block'>

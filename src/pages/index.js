@@ -10,14 +10,14 @@ import Benefits from "../components/Benefits";
 import Features from "../components/Features";
 import GetStarted from "../components/GetStarted";
 
-
-
 const IndexStyles = styled.div`
     color: white;
     background-image: url(${bgImage});
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
     display: flex;
     flex-direction: column;
 `;
@@ -28,15 +28,10 @@ const IndexPage = () => {
       <GlobalStyles />
       <Typography />
       <Nav />
-      <div id="home" />
       <Home />
-      <div id="challenges" />
       <Challenges />
-      <div id="features" />
       <Features />
-      <div id="benefits" />
       <Benefits />
-      <div id="getStarted" />
       <GetStarted />
     </IndexStyles>
   )

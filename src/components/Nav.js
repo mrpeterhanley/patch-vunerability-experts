@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 import StartButton from "./StartButton";
-import hamburgerIcon from "../images/menu.svg";
-import closeIcon from "../images/x.svg";
 import { Link } from "gatsby";
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 
 const NavStyles = styled.nav`
 
@@ -40,28 +40,21 @@ const NavStyles = styled.nav`
       display: none;
     }
 
-    .getStarted {
-      background-color: black;
-      padding: 2px;
-      border-radius: 0.2rem;
+    .hamburgerButton, .closeButton {
+      background: none;
+      border: none;
+      color: white;
     }
 
-    .getStarted:hover {
-      background-color: grey;
+    .hamburgerButton:hover,
+    .closeButton:hover {
       color: black;
     }
 
-    .hamburgerButton {
-      background: none;
-      border: none;
-    }
-
     .closeButton {
-      background: none;
-      border: none;
       position: absolute;
-      right: 15px;
-      top: 15px;
+      right: 17.5px;
+      top: 17.5px;
     }
 
     @media screen and (max-width: 600px) {
@@ -72,7 +65,7 @@ const NavStyles = styled.nav`
       }
 
       li {
-        padding: 5px 20px;
+        padding: 10px 20px;
       }
 
       .hideOnMobile {
@@ -96,18 +89,18 @@ export default function Nav() {
   return (
     <NavStyles>
       <ul onClick={toggleMenu}>
-          <li className="showOnMobile"><button onClick={toggleMenu} className="hamburgerButton" ><img src={hamburgerIcon} alt="hamburger menu icon"/></button></li>
-          <li className="hideOnMobile"><Link to="/#home" >Home</Link></li>
+          <li className="showOnMobile"><button aria-label="Open mobile menu" onClick={toggleMenu} className="hamburgerButton" ><MenuIcon /></button></li>
+          <li className="hideOnMobile"><Link to="/" >Home</Link></li>
           <li className="hideOnMobile"><Link to="/#challenges">Challenges</Link></li>
           <li className="hideOnMobile"><Link to="/#features">Features</Link></li>
           <li className="hideOnMobile"><Link to="/#benefits">Benefits</Link></li>
           <li className="hideOnMobile"><StartButton /></li>
-          {menuOpen? <><li className="showOnMobile"><Link to="/#home">Home</Link></li>
+          {menuOpen? <><li className="showOnMobile"><Link to="/">Home</Link></li>
           <li className="showOnMobile"><Link to="/#challenges">Challenges</Link></li>
           <li className="showOnMobile"><Link to="/#features">Features</Link></li>
           <li className="showOnMobile"><Link to="/#benefits">Benefits</Link></li>
           <li className="showOnMobile"><Link className="getStarted" to="/#getStarted">Get Started</Link></li>
-          <button className="closeButton showOnMobile" onClick={toggleMenu}><img src={closeIcon} alt="close icon" /></button></> : null}
+          <button aria-label="Close mobile menu" className="closeButton showOnMobile" onClick={toggleMenu}><CloseIcon /></button></> : null}
       </ul>
     </NavStyles>
   )

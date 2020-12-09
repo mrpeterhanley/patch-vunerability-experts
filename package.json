@@ -16,6 +16,8 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-anchor-links": "^1.2.0",
