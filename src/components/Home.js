@@ -19,13 +19,16 @@ const HomeStyles = styled.div`
         background: rgb(242,180,155);
         background: linear-gradient(0deg, rgba(242,180,155,1) 0%, rgba(241,95,96,1) 50%, rgba(169,55,89,1) 100%); 
         padding: 0 80px 60px 80px;
-        gap: 20px;
         clip-path: polygon(100% 0, 100% 88%, 55% 88%, 50% 100%, 45% 88%, 0 88%, 0 0);
         display: grid;
         grid-template-columns: 200px 1fr;
         align-items: center;
         justify-content: center;
         justify-items: center;
+    }
+
+    .inner > * {
+        margin: 10px 0;
     }
 
     .mainIcon {
